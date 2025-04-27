@@ -10,5 +10,6 @@ Sidebar - File tree with folder support. Each folder has a dropdown arrow you ca
 - Rename files and folders.
 - When you click a file or folder it highlights.
 
+When you click a file it shows in the main panel. It should have a separate viewer for each of the files types. Markdown and txt form renders as an inline editor. You can make edits and save them, then the files in the system update. 
 
-When you click a file it shows in the main panel.
+The files are going to be quite long and there's going to be a lot of them.
