@@ -1,0 +1,3 @@
+SOURCE: [substitutes/livecontent]
+
+Read the content of the source and extract all of the footnotes and references from it. Try to be as accurate as possible. Your final response should be along and comprehensive passage that lists all of the footnotes with 1) the citation or all the information you can find out about the source and 2) the preceeding paragraph to the reference in the source. Be as accurate and explicit as possible.

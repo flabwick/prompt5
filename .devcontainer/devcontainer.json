@@ -1,0 +1,11 @@
+{
+    "name": "PromptViewer",
+    "postCreateCommand": "pip install -r requirements.txt",
+    "forwardPorts": [5001],
+    "customizations": {
+      "vscode": {
+        "settings": {},
+        "extensions": []
+      }
+    }
+  }

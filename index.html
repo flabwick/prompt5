@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prompt Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="container">
+    <aside>
+      <h2>File Tree</h2>
+      <div id="tree-controls">
+        <label for="folder-select">Root:</label>
+        <select id="folder-select">
+          <option value="prompts">prompts</option>
+          <option value="references">references</option>
+        </select>
+      </div>
+      <ul id="file-tree"></ul>
+      <div class="tree-actions">
+        <button id="add-file-button">➕</button>
+        <button id="add-folder-button">📁</button>
+        <button id="rename-button">✏️</button>
+        <button id="delete-button">🗑️</button>
+      </div>
+    </aside>
+
+    <main>
+      <section id="editor-section">
+        <h3>Editor</h3>
+        <button id="save-button">💾 Save</button>
+        <textarea id="editor" placeholder="Select a file to edit..."></textarea>
+      </section>
+
+      <section id="output-section">
+        <h3>Resolved Output</h3>
+        <div id="output-controls">
+          <button id="copy-button">📋 Copy</button>
+          <span id="counter">0 tokens • 0 words</span>
+        </div>
+        <pre id="prompt-content"></pre>
+      </section>
+    </main>
+  </div>
+  <div id="toast">Copied!</div>
+  <script src="script.js"></script>
+</body>
+</html>
