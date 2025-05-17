@@ -1,0 +1,17 @@
+[TABLE 1.1] Selected Observations on Test Scores and Other Variables for California School Districts in 1999
+---BOUNDS---
+START: TABLE 1.1 Selected Observations
+END: Note: The California test score
+---END---
+
+[TABLE 1.2] Selected Observations on the Growth Rate of GDP and the Term Spread in the United States: Quarterly Data, 1960:Q1–2017:Q4
+---BOUNDS---
+START: TABLE 1.2 Selected Observations
+END: Note: The United States GDP and
+---END---
+
+[TABLE 1.3] Selected Observations on Cigarette Sales, Prices, and Taxes, by State and Year for U.S. States, 1985–1995
+---BOUNDS---
+START: TABLE 1.3 Selected Observations
+END: Note: The cigarette consumption data
+---END---

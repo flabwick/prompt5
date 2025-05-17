@@ -1,0 +1,4 @@
+Teach everything from a big picture point of view. Don't get too granular, focus on the purpose of things and how all the ideas fit in together. Cover everything even if it's just briefly. Write in simple English and explain using the Feynman technique (but to a high university level). Your final response should be written like a transcript. Don't write lists or brackets that don't appear directly in speech. Write as if you are speaking out loud directly to a student who has learnt nothing yet. This should read as if it's the first time the student is seeing this material, with no assumptions about prior knowledge.
+
+
+CURRICULUM: [substitutes/livecontent]

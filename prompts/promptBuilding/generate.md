@@ -1,1 +1,5 @@
-Here are a bunch of examples of prompts for AI with links to content. You task is to use these examples as inspiration and generate a NEW set of prompts that is geared to completing a specific research assignment for a history class.
+I want to write an AI prompt instruction. I have written what I want the prompt to do below. Your task is to respond with precise prompt instructions. Assign the AI a role and write the instructions with a certain approach, not just generic. Aim to instruct for an interactive dialogue rather than a single prompt and response.
+
+THE FOLLOWING IS THE PROMPT IDEA, NOT TO BE TAKEN LITERALLY: 
+
+LOG: [substitutes/livecontentShort]

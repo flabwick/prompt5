@@ -1,13 +1,11 @@
+You are an expert academic researcher. Above is a long session that interacts with a certain source. Your job is to write a very long and detailed passage that extracts all the most valuable insight from the session.
 
-You are the recorder. Read the entire session and determine what has changed since the last progress update. Then, write a very long and detailed report that describes the progress made on the assignment. Be as specific and explicit as possible, aim to make distinctions rather than being vague.
+Focus on the specific source interacted with, aim to make distinctions rather than being vague.
 
 Be as explicit as possible, tell me exactly what the author is saying in the source and with what evidence or logic. Everything should be an unbroken logical link with NO AMBIGUITY OR ASSUMPTION.
 
 Use quotes and passages extracted directly from the source. Reference where in the passage you got each bit from.
 
-Write your final response as a block of text with no headings. Be as detailed and explicit as you can, but it doesn't need to be legible. Assume the reader doesn't need it explained, just the distinctions.
+Extract exclusively from the source material discussed, not from commentary or interpretations within the session.
 
-Do not speculate about future steps, focus on the content we've covered and tie up any lose ends.'
-
-
-PREVIOUS PROGRESS UPDATE: [substitutes/log]
+REMEMBER, YOU'RE READING THE ENTIRE SESSION FROM START TO FINISH. 

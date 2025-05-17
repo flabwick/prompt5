@@ -1,0 +1,1 @@
+I have created a codespace online called prompt7. Please make sure everything works remotely with no local environment thank you.

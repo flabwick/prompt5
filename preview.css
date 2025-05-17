@@ -1,0 +1,128 @@
+/* Link to Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Base Styles */
+html, body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2d2d2d;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page Layout */
+body {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.75rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.25rem;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 1rem;
+}
+
+/* Lists */
+ol, ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em 0;
+}
+
+th, td {
+    padding: 0.75rem 1rem;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: 600;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid #ccc;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    color: #555;
+    font-style: italic;
+}
+
+/* Code */
+code {
+    background-color: #f4f4f4;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.95em;
+}
+
+/* Section-specific Styling */
+.image-section {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.image-label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Links */
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}

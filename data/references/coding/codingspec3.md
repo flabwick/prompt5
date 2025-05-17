@@ -1,0 +1,21 @@
+I have a github codespace, devevelop the app as described so it works entirely remotely.
+
+Tab-based interface. There is a main panel with a sidebar and a horizontal bar at the top that displays the tabs for selection.
+
+Tab bar - You can select, reorder, x to remove it. When you click any of the files it appears in the main panel and appears as a new item on the tab bar. Tabs should be consistent and save to state.
+
+Sidebar - There is a sidebar icon at the top left corner. When you click it, it expands the sidebar. The icon stays stationary the whole time. At the top are two options you can toggle between 1) files and 2) chats. 
+    - Files. This menu shows a file tree with folder support. The repository has a folder called /data which stores all the files that appear here. When you select folders they highlight and expand/collapse with the nested files or more folders (no limits on nesting). Files are in markdown form right now. You can right click a folder, a blank space below the file tree in the sidebar or a file. On a folder there are options 1 create new file 2 create new folder 3 rename 4 delete. On the blank space is 1 create new file and 2 create new folder. On a file there is 1 rename 2 delete. Files and folders should support drag and drop to reorder them. When you hover your mouse over it on the desktop it should highlight. When the file tree gets too long it should allow scroll. 
+    - Chats. This menu shows a chronological list of chats with a button at the top that starts a new one. Existing chats can be renamed or deleted on right click. When the list of chats gets too long it should allow scroll. There is a folder on my repository called /chats, which includes the chats all as .json files. They don't appear as json in the main panel, they appear rendered. The chats are interactions between the user and AI, alternating.
+
+
+Main panel: when you click a file or a chat it appears in the main panel as a new tab. Both files and chats open as new tabs, each with a little emoji icon which denotes what the tab is.
+    - Files: When a file is opened, it appears as a live inline editor in the main panel. Each line is live rendered. That is, it shows as it's full rendered HTML version (not md), unless you click one of the lines, then it is converted to md to be edited. When you click out it should go back to html.
+    - Chats: When a chat is opened, it appears as a rendered chat UI according to the content of the json file equivalent. It renders this and at the bottom there is a textbox with a send button.
+      - Textbox and AI link: When you type something into the textbox and send it, it is added to the json as a user response. Then, the entire json file is sent to ChatGPT with an API request. The response is then added as an AI response below the user response. The output should implement streaming, that is it renders on the screen in chunks rather than waiting for the full response. I'll give you an API key to use with this.
+
+Mobile support - The app should work both on mobile web browsers and also on desktop ones. The sidebar on the desktop app should be draggable to adjust the width. On the mobile app, however, I just want the three lines to expand or collapse and then either show the entire main panel or just show the entire sidebar, one or the other.
+
+Links, copying and rendering files - Files can include links which are written in square brackets. Written as the file paths assuming the data/ folder is the root. For example [school/assignment/log] (assuming it is log.md ignore the extension in the link). When you render a file in the main panel by clicking on it, the top of the panel will show a copy button and an export button. 
+    - COPY: The copy button will substitute all the links with the content of the linked files eg [this is the content of log] and copy to the clipboard through the browser.
+    - EXPORT: This button will create a new chat with a new json with the full substituted output as the first user entry in the chat. Then it will open it as a new tab, send the output to ChatGPT and stream the response as an AI response.

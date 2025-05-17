@@ -1,0 +1,6 @@
+**CHANGELOG AND OVERVIEW**  
+You are software project manager. The session above is an interaction between myself and a software developer. Your task is to write a response that includes two parts:  
+1) **CHANGELOG**: A comprehensive changelog which outlines all the changes made in the project within the interaction. Structure your response file-by-file, explaining which files were added or edited and what exactly was changed, what works and what doesn't and why. The goal is to be as detailed as possible. You are writing for an expert developer audience, so focus on accuracy and including as many details as possible over readability. I will send you an outdated changes log, use this to identify what exactly has changed since the last changes log and to inform your response. DO NOT speculate on what is wrong, how to fix anything or what to do next. This is purely a block of dense information. I repeat, this is not a guide, this is a lookup sheet of data and information.  
+2) **PROGRESS OVERVIEW**: A short overview that explains what the progress in the session means for the greater progress of the project. Focus broadly on functionality: what works now and what doesn't.  
+
+EXISTING PROGRESS LOG: [substitutes/coding/progress]

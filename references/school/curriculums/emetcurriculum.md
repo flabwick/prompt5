@@ -1420,5 +1420,282 @@ This structure reflects the explicit and implicit curriculum covered in the lect
 
 
 # Week 8
+Topic: Assignment 2 and General Housekeeping
+
+What to learn:
+	•	Assignment 2 covers material up to and including Lecture 9, especially multiple regression and functional forms.
+	•	Expect a 3–4 hour workload.
+	•	Less direct overlap with computer labs compared to Assignment 1.
+	•	A quiz is scheduled next week, covering approximately the last 4 weeks of content.
+
+Not in scope:
+	•	Specific technical implementation of assignment questions unless mentioned.
+	•	Deep coding practice; assumed prior from Assignment 1.
+
+Methods/tools used:
+	•	Python coding.
+	•	Regression modelling with functional forms.
+
+Exam-style questions:
+	•	Expect applied regression interpretation.
+	•	Possibly conceptual MCQs or written questions on omitted variable bias (OVB), functional forms.
+
+Equations to know:
+	•	None specific here; see later sections.
+
+Diagrams to master:
+	•	Not relevant in this section.
+
+⸻
+
+Topic: Omitted Variable Bias (OVB)
+
+What to learn:
+	•	OVB arises when a relevant explanatory variable (e.g., X₂) is excluded from a regression model.
+	•	Understand conditions under which OVB arises:
+	•	Omitted variable is a determinant of Y.
+	•	Omitted variable is correlated with included variable(s).
+	•	Effect on bias:
+	•	Estimate of β₁ becomes biased.
+	•	Bias direction determined by sign of β₂ and Cov(X₁, X₂).
+
+Not in scope:
+	•	Instrumental variables (only briefly referenced for advanced study).
+	•	Formal derivation beyond basic proof structure.
+
+Methods/tools used:
+	•	Use of covariance and expectation rules to derive bias formula.
+	•	Thought experiments using oracle model.
+	•	Applied interpretation through practical examples (e.g., Mozart effect).
+
+Exam-style questions:
+	•	Derive or identify omitted variable bias formula.
+	•	Explain conditions for unbiasedness.
+	•	Discuss examples of biased estimation due to omission.
+	•	Interpret regression output under potential OVB.
+
+Equations to know:
+	•	Bias formula:
+E[β̂₁] = β₁ + β₂ * Cov(X₁, X₂) / Var(X₁)
+	•	Regression model transformation:
+Y = β₁X₁ + β₂X₂ + U
+becomes:
+Y = β₁X₁ + W, where W = β₂X₂ + U
+
+Diagrams to master:
+	•	Not required here, but be prepared to sketch schematic diagrams showing correlation paths (e.g., indirect effects via omitted variables).
+
+⸻
+
+Topic: Interpreting Regression Coefficients and Bias
+
+What to learn:
+	•	β̂₁ captures both:
+	•	Direct effect of X₁ on Y.
+	•	Indirect effect of omitted X₂ on Y via its correlation with X₁.
+	•	Understand why OVB prevents causal interpretation.
+	•	Real-world applications: Mozart effect, returns to education.
+
+Not in scope:
+	•	Full identification strategies for causal inference (e.g., RCTs, IVs)—only conceptually discussed.
+
+Methods/tools used:
+	•	Causal diagrams (conceptual).
+	•	Multiple regression for isolating effects.
+	•	Simulation thought experiments (e.g., assigning babies randomly).
+
+Exam-style questions:
+	•	Discuss why β̂₁ may not represent the causal effect.
+	•	Propose control variables to mitigate OVB.
+	•	Identify bias direction given signs of β₂ and Cov(X₁, X₂).
+
+Equations to know:
+	•	Same as above.
+
+Diagrams to master:
+	•	Stylised path diagrams showing confounding.
+
+⸻
+
+Topic: Randomised Controlled Trials (RCTs) vs. Observational Studies
+
+What to learn:
+	•	Why random assignment removes OVB.
+	•	Ideal research design to uncover causal effect.
+	•	Observational data cannot ensure unbiasedness without controls.
+	•	Causal effect = effect under ideal RCT design.
+
+Not in scope:
+	•	Implementation of RCTs.
+	•	Statistical inference from RCTs (beyond scope).
+
+Methods/tools used:
+	•	Random assignment thought experiment.
+	•	Conceptual causal inference reasoning.
+
+Exam-style questions:
+	•	Compare causal inference from RCTs vs observational regressions.
+	•	Critically evaluate regression designs (e.g., instrument playing and salary).
+	•	Propose experimental designs for causal inference.
+
+Equations to know:
+	•	None new; interpret bias formula under random assignment (bias = 0).
+
+Diagrams to master:
+	•	Conceptual assignment group comparisons.
+
+⸻
+
+Topic: Return to Education Case Study
+
+What to learn:
+	•	Estimating causal return to education is confounded by unobserved ability.
+	•	Regression:
+log(wage) = β₀ + β₁ * education + β₂ * experience + u
+	•	Interpretation:
+β₁ ≈ % return to 1 extra year of education.
+	•	OVB likely positive if ability is positively correlated with education and wage.
+	•	Empirical challenges in isolating β₁.
+	•	Role of panel datasets (e.g., HILDA).
+
+Not in scope:
+	•	Instrumental variables methods (briefly named but not developed).
+
+Methods/tools used:
+	•	Multiple regression with control variables.
+	•	Use of logs to interpret β as % change.
+
+Exam-style questions:
+	•	Interpret regression coefficient in log-linear model.
+	•	Explain why β̂₁ may be biased upward.
+	•	Discuss omitted variable (e.g., ability) and its effect on results.
+	•	Contrast simple and multiple regressions.
+
+Equations to know:
+	•	log(wage) = β₀ + β₁ * education + β₂ * experience + u
+	•	% interpretation:
+β̂₁ = estimated % increase in wage per additional year of education
+
+Diagrams to master:
+	•	Wage vs education curve (conceptual, with and without bias).
+
+⸻
+
+Topic: Frisch-Waugh-Lovell (FWL) Theorem
+
+What to learn:
+	•	FWL shows that the coefficient on X₁ in a multiple regression equals the coefficient from:
+	1.	Regress X₁ on other Xs → get residuals (X₁~)
+	2.	Regress Y on other Xs → get residuals (Y~)
+	3.	Regress Y~ on X₁~
+	•	Demonstrates how multiple regression isolates “pure” effect of X₁.
+	•	Conceptual understanding only.
+
+Not in scope:
+	•	Formal proof.
+	•	Manual calculation unless guided by assignment/code.
+
+Methods/tools used:
+	•	Residual-based regression steps.
+	•	Conceptual “partialing out” logic.
+
+Exam-style questions:
+	•	True/false conceptual questions.
+	•	Explain what FWL tells us about multiple regression.
+
+Equations to know:
+	•	None to derive; understand structure:
+	•	β̂₁ = coefficient from regression of Y~ on X₁~
+
+Diagrams to master:
+	•	No visuals required, but conceptual block-diagram of regression steps may help.
+
+⸻
+
+Topic: Measures of Fit in Multiple Regression
+
+What to learn:
+	•	R² formula unchanged:
+R² = 1 − RSS/TSS
+	•	R² always increases with additional regressors.
+	•	Adjusted R² penalises for extra regressors:
+R̄² = 1 − [(RSS/(n − k − 1)) / (TSS/(n − 1))]
+	•	Understand why adjusted R² may go down.
+	•	Adjusted R² is preferred measure in multiple regression.
+	•	Standard error of regression (SER):
+SER = √(RSS / (n − k − 1))
+
+Not in scope:
+	•	R² derivation.
+	•	R² as a test statistic.
+
+Methods/tools used:
+	•	Algebraic manipulation.
+	•	Intuition for model complexity penalty.
+
+Exam-style questions:
+	•	Define/interpret R² and adjusted R².
+	•	Calculate R² or R̄² from given data.
+	•	Explain why R² always increases but R̄² might not.
+	•	Identify which model fits better based on R̄².
+
+Equations to know:
+	•	R² = 1 − RSS/TSS
+	•	R̄² = 1 − [(RSS/(n − k − 1)) / (TSS/(n − 1))]
+	•	SER = √(RSS / (n − k − 1))
+
+Diagrams to master:
+	•	Not required.
+
+⸻
+
+Topic: Applied Causality Evaluation (Sleep Study Example)
+
+What to learn:
+	•	Applied reasoning for spurious correlation.
+	•	OVB critique of observational causal claims.
+	•	Important to distinguish correlation from causation.
+	•	Typical biases: reverse causality, omitted variables, selection bias.
+
+Not in scope:
+	•	Statistical testing for causality.
+
+Methods/tools used:
+	•	Critical thinking.
+	•	OVB framework application.
+
+Exam-style questions:
+	•	Short-answer: critique causal claim.
+	•	Identify omitted/confounding variables.
+
+Equations to know:
+	•	Conceptual; link back to OVB bias term.
+
+Diagrams to master:
+	•	None, but causal flow charts (e.g., DAGs) may be used illustratively.
+
+⸻
+
+Final Notes
+
+General Skills Required:
+	•	Interpret regression coefficients (level/log/log-log models).
+	•	Spot and explain omitted variable bias.
+	•	Use R², adjusted R², and SER properly.
+	•	Apply OVB reasoning in practical settings.
+	•	Engage with causal vs correlation reasoning.
+
+Don’t Learn:
+	•	Full derivations or proofs (FWL, adjusted R²).
+	•	Advanced methods (IVs, RCTs implementation).
+	•	Formal causality frameworks (e.g., potential outcomes).
+
+Expect:
+	•	Applied reasoning questions.
+	•	Regression output interpretation.
+	•	Conceptual derivations of bias.
+	•	Discussions of assumptions and model validity.
 # Week 9
 # Weeo 10
+
+Use the curriculum to answer the uploaded question. IF you can't give a definitive answer from the curriculum, say you don't know. Assume you only know whats on the curriculum.

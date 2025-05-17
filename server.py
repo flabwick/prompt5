@@ -121,10 +121,32 @@ def delete():
         abort(404)
     return jsonify(success=True)
 
+@app.route('/api/epub-files')
+def list_epub_files():
+    books_dir = os.path.join(BASE_DIR, 'references', 'books')
+    # Ensure the directory exists, create if not
+    if not os.path.exists(books_dir):
+        os.makedirs(books_dir, exist_ok=True)
+    if not os.path.isdir(books_dir):
+        return jsonify([])
+    files = [f for f in os.listdir(books_dir) if f.lower().endswith('.epub')]
+    return jsonify(sorted(files))
+
 @app.route('/', defaults={'path': 'index.html'})
 @app.route('/<path:path>')
 def static_files(path):
     return send_from_directory('.', path)
+
+@app.route('/epub')
+def epub_page():
+    return send_from_directory('epub', 'index.html')
+
+@app.route('/epub/<path:filename>')
+def epub_static(filename):
+    # Prevent /epub/api/* from being handled here
+    if filename.startswith('api/'):
+        abort(404)
+    return send_from_directory('epub', filename)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)

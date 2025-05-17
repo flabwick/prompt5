@@ -44,6 +44,24 @@
     </main>
   </div>
   <div id="toast">Copied!</div>
+  <!-- EPUB Modal -->
+  <div id="epub-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); z-index:1000; align-items:center; justify-content:center;">
+    <iframe id="epub-iframe" src="/epub/index.html" style="width:80vw; height:80vh; border:none; background:#fff;"></iframe>
+    <button id="epub-modal-close" style="position:absolute; top:10px; right:10px; z-index:1001;">✖</button>
+  </div>
   <script src="script.js"></script>
+  <script>
+    // Modal close button
+    document.getElementById('epub-modal-close').onclick = function() {
+      document.getElementById('epub-modal').style.display = 'none';
+    };
+    // Listen for passage selection from EPUB UI
+    window.addEventListener('message', function(e) {
+      if (e.data && e.data.type === 'epub-snippet') {
+        window.handleEpubSnippet && window.handleEpubSnippet(e.data);
+        document.getElementById('epub-modal').style.display = 'none';
+      }
+    });
+  </script>
 </body>
 </html>

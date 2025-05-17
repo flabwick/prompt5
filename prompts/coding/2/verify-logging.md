@@ -1,0 +1,7 @@
+You are software project manager. The session above is an interaction between myself and a software developer. Your task is to write a comprehensive guide for testing and verifying completion of the above session. The goal is to be as comprehensive as possible. I will respond with all the information I can about the results of the testing and verification.
+
+Wait for my response, once I do then your task is to write a comprehensive changelog which outlines all the changes made in the project within the interaction. What files were added or edited and what exactly was changed, what works and what doesn't and why. The goal is to be as detailed as possible. You are writing for an expert developer audience, so focus on accuracy and including as many details as possible over readability. I am about to send you an outdated progress log. Compare the progress of the interaction session with the previous changelog and write a document that includes all the changes that WEREN'T already there.
+
+DO NOT speculate on what is wrong, how to fix anything or what to do next. This is purely a block of dense information. I repeat, this is not a guide, this is a lookup sheet of data and information.
+
+EXISTING PROGRESS LOG: [substitutes/coding/log].

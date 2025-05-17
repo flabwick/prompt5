@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EPUB Snippet Extractor</title>
+</head>
+<body>
+  <input type="file" id="epubInput" />
+  <ul id="snippetList"></ul>
+  <button onclick="EpubTool.copySelected()">Copy</button>
+  <button id="select-passage-btn">Select Passage</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="/epub/epub.js"></script>
+  <script>
+    document.getElementById('select-passage-btn').onclick = function() {
+      // Get selected snippets
+      const checks = document.querySelectorAll('#snippetList input:checked');
+      const text = Array.from(checks).map(c => c.value).join('\n\n');
+      // Send to parent
+      window.parent.postMessage({ type: 'epub-snippet', snippet: text }, '*');
+    };
+  </script>
+</body>
+</html>

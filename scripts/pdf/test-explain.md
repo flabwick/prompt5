@@ -1,0 +1,1 @@
+Explain all of this to me in plain english as if I'm a complete beginner. Use the same formatted image links appropriately. They have been converted to text in annotations, so use them to quantify what the image contains. Respond in a .md code file

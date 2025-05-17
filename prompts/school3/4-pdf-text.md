@@ -1,0 +1,1 @@
+I have sent you a pdf. Your task is to dictate everything as accurately as possible into markdown form. If there are images, diagrams or visuals within the pdf, you should write in your conversion a label like IMAGE and then describe in as much explicit detail what the image, diagram or visual looks like EXACTLY.

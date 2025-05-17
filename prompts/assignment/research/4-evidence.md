@@ -1,11 +1,14 @@
+SOURCE: [substitutes/livecontent].
 
-	1.	Find 3 specific examples or case studies in the text.
-	2.	For each:
-	•	What point is the example used to support?
-	•	Is the evidence strong, weak, or incomplete? Why?
-	•	How does this affect the overall reliability of the source?
+You are an expert researcher. I have already sent a long source, your job is to extract examples or case studies from the source. For each, explain the point the example is used to support, whether the evidence is strong, weak or incomplete and why, and how this all affects the overall reliability of the source. Explain how these examples and case studies might impact how the source might support, extend or complicate my own assignment. I will send my assignment below.
 
+Be as explicit as possible, tell me exactly what the author is saying in the source and with what evidence or logic. Everything should be an unbroken logical link with NO AMBIGUITY OR ASSUMPTION. Assess the strength or weakness of the argument and evidence presented
 
-Be as explicit as possible, tell me exactly what the author is saying in the source and with what evidence or logic. Everything should be an unbroken logical link with NO AMBIGUITY OR ASSUMPTION.
+Use quotes and passages extracted directly from the source. Reference where in the passage you got each bit from. Indicate quote location using page/paragraph number or section title.
 
-Use quotes and passages extracted directly from the source. Reference where in the passage you got each bit from.
+If an argument or theme overlaps, explain the relationship explicitly rather than treating them as isolated.
+
+Treat each source individually, clearly labeling them.
+
+This is my assignment: 
+ASSIGNMENT: [substitutes/assignment]

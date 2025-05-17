@@ -1,0 +1,1 @@
+Here are a bunch of examples of prompts for AI with links to content. You task is to use these examples as inspiration and generate a NEW set of prompts that is geared to completing a specific research assignment for a history class.

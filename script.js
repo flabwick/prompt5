@@ -101,6 +101,7 @@ async function fetchMarkdown(path) {
 }
 
 function extractReferences(content) {
+  // Also match .epub references
   const matches = [...content.matchAll(/\[([^\]]+)\]/g)];
   return matches.map(m => m[1]).filter(name => /^[\w\-\/\.]+$/.test(name));
 }
@@ -125,7 +126,17 @@ async function resolveReferencesRecursive(content, visited = new Set()) {
     visited.add(ref);
 
     const refPath = `${REFERENCES_DIR}${ref}.md`;
-    const refContent = await fetchMarkdown(refPath);
+    let refContent = '';
+    try {
+      refContent = await fetchMarkdown(refPath);
+    } catch (err) {
+      // If fetch fails, leave the link as is
+      continue;
+    }
+    if (!refContent.trim()) {
+      // If file is empty, leave the link as is
+      continue;
+    }
     const resolvedContent = await resolveReferencesRecursive(refContent, visited);
     content = content.replaceAll(`[${ref}]`, `[${resolvedContent.trim()}]`);
   }
@@ -281,4 +292,44 @@ function refreshTree() {
       selected.appendChild(subtree);
       selected.dataset.loaded = 'true';
     });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Delegate click on references in the editor
+  document.getElementById('editor').addEventListener('click', function(e) {
+    const textarea = e.target;
+    if (textarea.tagName !== 'TEXTAREA') return;
+    // Find the word under cursor
+    const pos = textarea.selectionStart;
+    const val = textarea.value;
+    const before = val.lastIndexOf('[', pos);
+    const after = val.indexOf(']', pos);
+    if (before !== -1 && after !== -1 && after > before) {
+      const ref = val.slice(before + 1, after);
+      if (ref.endsWith('.epub')) {
+        openEpubModal(ref, before, after);
+      }
+    }
+  });
+});
+
+// Open EPUB modal and handle passage selection
+function openEpubModal(epubName, refStart, refEnd) {
+  const modal = document.getElementById('epub-modal');
+  const iframe = document.getElementById('epub-iframe');
+  modal.style.display = 'flex';
+  // Optionally, pass epubName to iframe via postMessage or query param
+  // e.g., iframe.src = `/epub/index.html?book=${encodeURIComponent(epubName)}`;
+  // For now, user selects the file manually
+
+  // Handler for passage selection
+  window.handleEpubSnippet = function(data) {
+    // Insert selected passage into editor, replacing [book.epub]
+    const textarea = document.getElementById('editor');
+    const val = textarea.value;
+    const newVal = val.slice(0, refStart) + data.snippet + val.slice(refEnd + 1);
+    textarea.value = newVal;
+    // Optionally, update output
+    textarea.dispatchEvent(new Event('input'));
+  };
 }
