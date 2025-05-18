@@ -1,1 +1,1 @@
-[school/curriculums/micro2/micro2full]
+[school/curriculums/emetcurriculum]

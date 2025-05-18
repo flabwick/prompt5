@@ -1,1 +1,1 @@
-[school/curriculums/micro2/report]
+I haven't learned anything yet, complete beginner assume 0XP.

@@ -4,9 +4,7 @@ I have sent you a long session between a tutor and a student. The session is the
 
 Compare the plan with what was actually done in the session. Read ONLY MY OWN INPUT INTO THE SESSION, do not imply anything.
 
-Your job is to respond with a log entry that takes note of what was taught in the session and the student's current estimated understanding. Evaluate the student's understanding based on their performance. Avoid misjudging fluency for mastery, take into account answers they got correct but superficially. Also take into account the information given as hints or elaborations by the tutor.
-
-If a section was missed entirely or not covered, mention that, don't just assume knowledge and fill it in. Be diligent.
+Your job is to respond with a long report that outlines all the changes in XP and why. Evaluate the student's understanding based on their performance. Avoid misjudging fluency for mastery, take into account answers they got correct but superficially. Also take into account the information given as hints or elaborations by the tutor. If a section was missed entirely or not covered, mention that, don't just assume knowledge and fill it in. Be diligent.
 
 DO NOT GIVE SCORES, try to articulate understanding with nuance rather than reducing understanding to a rating.
 

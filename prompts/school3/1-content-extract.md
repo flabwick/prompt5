@@ -9,3 +9,5 @@ Using context, determine equations, graphs, images and visuals that are relevant
 DO NOT CREATE A SPREADSHEET OR CODE FILE, JUST WRITE IN THE CHAT.
 
 Focus entirely on the teachable content, not any administrative information or announcements. Do not include any introduction or summary, just the units and the information within them.
+
+Extract no more than 5 units.

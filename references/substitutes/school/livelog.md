@@ -1,1 +1,1 @@
-[school/curriculums/micro2/log]
+I haven't learned anything yet, complete beginner.
