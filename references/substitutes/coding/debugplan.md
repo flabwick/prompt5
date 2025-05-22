@@ -1,1 +1,1 @@
-[coding/2/debugplan]
+[coding/chatui/debugplan]

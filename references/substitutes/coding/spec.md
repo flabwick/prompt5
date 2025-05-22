@@ -1,1 +1,1 @@
-[coding/3/spec]
+[coding/chatui/spec]

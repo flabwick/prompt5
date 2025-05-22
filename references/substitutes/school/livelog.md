@@ -1,1 +1,1 @@
-I haven't learned anything yet, complete beginner.
+[school/micro2/week11/lec11-2/log]

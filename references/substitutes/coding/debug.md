@@ -1,1 +1,1 @@
-[coding/3/debug]
+[coding/chatui/debug]

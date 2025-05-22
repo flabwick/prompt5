@@ -1,2 +1,2 @@
-[coding/3/log]
+[coding/chatui/log]
 

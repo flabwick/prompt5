@@ -26,14 +26,15 @@ XP Per Answer
 
 Stage Thresholds (All Levels)
 
-| Stage                               | XP Range     | Icon                                                       | Description |
-| ----------------------------------- | ------------ | ---------------------------------------------------------- | ----------- |
-| 🔴 Stage 1 – Exposure               | 0–299 XP     | Has seen content but no functional understanding.          |             |
-| 🟠 Stage 2 – Structural Mapping     | 300–799 XP   | Basic connections formed; partial logic.                   |             |
-| 🟡 Stage 3 – Applied Integration    | 800–1599 XP  | Accurate application across varied problems.               |             |
-| 🟢 Stage 4 – Conceptual Flexibility | 1600–2599 XP | Deep adaptability, flexible reasoning, abstraction.        |             |
-| 🔵 Stage 5 – Operational Mastery    | 2600–3999 XP | Fluent, efficient, precise performance with insight.       |             |
-| 💎 Stage 6 – Diamond Mastery        | 4000+ XP     | Flawless generalization, creative application, full depth. |             |
+| Stage                               | XP Range    | Icon                                                       | Description |
+| ----------------------------------- | ----------- | ---------------------------------------------------------- | ----------- |
+| 🔴 Stage 1 – Exposure               | 0–119 XP    | Has seen content but no functional understanding.          |             |
+| 🟠 Stage 2 – Structural Mapping     | 120–299 XP  | Basic connections formed; partial logic.                   |             |
+| 🟡 Stage 3 – Applied Integration    | 300–599 XP  | Accurate application across varied problems.               |             |
+| 🟢 Stage 4 – Conceptual Flexibility | 600–899 XP  | Deep adaptability, flexible reasoning, abstraction.        |             |
+| 🔵 Stage 5 – Operational Mastery    | 900–1199 XP | Fluent, efficient, precise performance with insight.       |             |
+| 💎 Stage 6 – Diamond Mastery        | 1200+ XP    | Flawless generalization, creative application, full depth. |             |
+
 
 Stage Guidelines (Based on Learning Science)
 
@@ -72,3 +73,5 @@ Decay Rules:
 | Stage 5       | –40 XP          |
 
 * No decay below 0 XP.
+
+RULE: YOU CANNOT BE NEGATIVE XP! DO NOT REDUCE XP TO BELOW 0.
